@@ -5,11 +5,17 @@
     <title>Page Title</title>
   </head>
   <body>
+  <button>
+    Press me!
+  </button>
     <script>
-      var max = 57; 
-      var actual = max - 13; 
-      var percentage = actual / max; 
-      const message = "hello world!"
+      const button = document.querySelector("button");
+      function greet() {
+        const name = prompt("What is your name?");
+        alert(`Hello ${name}, nice to see you!`);
+      }
+
+      button.addEventListener("click", greet);
     </script>
   </body>
 </html>
